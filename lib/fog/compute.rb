@@ -38,6 +38,9 @@ module Fog
       when :ninefold
         require 'fog/ninefold/compute'
         Fog::Compute::Ninefold.new(attributes)
+      when :octopus
+        require 'fog/octopus/compute'
+        Fog::Compute::Octopus.new(attributes)
       when :rackspace
         require 'fog/rackspace/compute'
         Fog::Compute::Rackspace.new(attributes)
